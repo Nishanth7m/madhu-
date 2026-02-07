@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Maha 💙</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        /* Custom Heart Cursor - Blue */
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewport="0 0 24 24" fill="%230ea5e9" stroke="white" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') 12 12, auto;
+      }
+      
+      .font-handwriting {
+        font-family: 'Dancing Script', cursive;
+      }
+      
+      .font-body {
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      /* Complex Floating Animation */
+      @keyframes floatUp {
+        0% { transform: translateY(110vh) rotate(0deg); opacity: 0; }
+        10% { opacity: 0.8; }
+        90% { opacity: 0.8; }
+        100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+      }
+
+      @keyframes sway {
+        0%, 100% { transform: translateX(0px); }
+        50% { transform: translateX(25px); }
+      }
+
+      .floating-heart {
+        position: fixed;
+        top: 0;
+        pointer-events: none;
+        z-index: 0;
+        will-change: transform, opacity;
+      }
+
+      /* Container for the inner heart to handle sway independently from float */
+      .heart-inner {
+        display: block;
+        animation: sway 3s ease-in-out infinite alternate;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "canvas-confetti": "https://esm.sh/canvas-confetti@^1.9.4"
+  }
+}
+</script>
+</head>
+  <body class="bg-sky-50 text-gray-800 antialiased selection:bg-sky-200 selection:text-sky-900">
+    <div id="root"></div>
+  </body>
+</html>
